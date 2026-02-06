@@ -1,4 +1,3 @@
-import js from "@eslint/js";
 import globals from "globals";
 import pluginReact from "eslint-plugin-react";
 import { defineConfig } from "eslint/config";
@@ -6,9 +5,12 @@ import { defineConfig } from "eslint/config";
 export default defineConfig([
   {
     files: ["**/*.{js,mjs,cjs,jsx}"],
-    plugins: { js },
-    extends: ["js/recommended"],
-    languageOptions: { globals: globals.browser },
+    plugins: {
+      react: pluginReact,
+    },
+    languageOptions: {
+      globals: globals.browser,
+    },
     rules: {
       "react/react-in-jsx-scope": "off",
       "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
@@ -19,5 +21,6 @@ export default defineConfig([
       },
     },
   },
+
   pluginReact.configs.flat.recommended,
 ]);
