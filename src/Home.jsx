@@ -18,6 +18,7 @@ export default function Home() {
 
   return (
     <>
+    <h2> test title    </h2>
       <h1>Home</h1>
       <Link to="/about">About</Link>
 
