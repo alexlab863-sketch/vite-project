@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-    <h2> test title    </h2>
+    <h2> test title  salom bu yangi feautre   </h2>
       <h1>Home</h1>
       <Link to="/about">About</Link>
 
