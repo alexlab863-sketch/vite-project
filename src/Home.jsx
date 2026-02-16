@@ -18,11 +18,13 @@ export default function Home() {
 
   return (
     <>
+
+
       
       <Link to="/about">About</Link>
 
       <form onSubmit={handleForm} className="login-form">
-        <h2 className="login-title">Login</h2>
+        <h2 className="login-title">Login here</h2>
 
         <div className="form-group">
           <input type="email" name="email" id="email" />
