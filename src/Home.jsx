@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>Home</h1>
+      <h1>Bu ynagi branchdan </h1>
       <Link to="/about">About</Link>
 
       <form onSubmit={handleForm} className="login-form">
